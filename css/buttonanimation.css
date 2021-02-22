@@ -1,0 +1,48 @@
+.hbtn {
+    position: relative;
+    box-sizing: border-box;
+    display: inline-block;
+    overflow: hidden;
+    padding: 8px 20px;
+    margin: 0px 3px 6px;
+    text-align: center;
+    border: 2px solid rgb(51, 86, 182);
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    white-space: nowrap;
+    z-index: 0;
+}
+
+.hbtn i {
+    padding-right: 8px;
+}
+
+.hb-border-bottom-br2 {
+    position: relative;
+    transition-duration: 0.2s;
+    overflow: visible;
+    box-sizing: border-box;
+    border: none;
+    padding: 10px 22px;
+}
+
+.hb-border-bottom-br2::after {
+    box-sizing: border-box;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    content: "";
+    border: 2px solid rgb(51, 86, 182);
+    z-index: 2;
+    transition: all 0.2s linear 0s;
+}
+
+.hb-border-bottom-br2:hover::after {
+    border-left-color: transparent;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-width: 4px;
+    transition: all 0.2s linear 0s;
+}
